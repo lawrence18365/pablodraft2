@@ -348,7 +348,6 @@
     .service-subtitle {
         font-size: 1.6rem;
         font-weight: 500;
-        
         text-align: left;
     }
     
@@ -2444,18 +2443,18 @@ a.cta-main:active {
                     </div>
                 </div>
                 
-                <div class="social-section">
-                    <h3>Follow Us</h3>
-                    <a href="https://www.instagram.com/pabsfacilityservices/" class="instagram-link" target="_blank">
-                        <div class="instagram-container">
-                            <div class="instagram-logo">
-                                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
-                            </div>
-                            <span class="instagram-handle">@pabsfacilityservices</span>
-                        </div>
-                    </a>
-                    <p class="business-hours">Monday to Saturday 8am to 6pm</p>
-                </div>
+            <div class="social-container">
+    <a href="https://www.instagram.com/pabsfacilityservices/" class="instagram-follow" target="_blank">
+        <div class="instagram-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 16V8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M17.5 6.51c.01-.01 0-.01 0 0Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <span class="instagram-text">@pabsfacilityservices</span>
+    </a>
+</div>
             </div>
         </div>
     </div>
@@ -2576,31 +2575,43 @@ a.cta-main:active {
     overflow: hidden;
 }
 
-.social-section {
-    margin-top: 30px;
+.social-container {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 20px;
 }
 
-.social-link {
+.instagram-follow {
     display: flex;
     align-items: center;
-    gap: 10px;
-    color: #ffffff;
+    gap: 12px;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
     text-decoration: none;
-    padding: 10px 0;
-    transition: all 0.2s ease;
+    padding: 16px 28px;
+    border-radius: 14px;
+    max-width: fit-content;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.social-link:hover {
-    opacity: 0.9;
-}
-
-.social-link svg {
+.instagram-icon {
     width: 24px;
     height: 24px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.social-link span {
-    font-size: 1rem;
+.instagram-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.instagram-text {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    color: white;
 }
 
 .footer-bottom {
